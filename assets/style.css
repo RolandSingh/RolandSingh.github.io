@@ -115,13 +115,35 @@ a:hover { text-decoration: underline; }
 .badge.review   { background: #fff8c5; color: #9a6700; }
 .badge.prep     { background: #ddf4ff; color: #0969da; }
 
-.code-btn {
-  display: inline-block; margin: 6px 0 0 10px;
-  font-size: 12.5px; font-weight: 700;
-  padding: 2px 12px; border-radius: 20px;
-  background: #24292f; color: #fff !important;
+/* publication action buttons */
+.pub-links {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+  margin-top: 10px;
 }
-.code-btn:hover { background: var(--accent); text-decoration: none; }
+.gh-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 13px; font-weight: 600; letter-spacing: 0.2px;
+  padding: 6px 16px; border-radius: 8px;
+  background: linear-gradient(135deg, #2b3137, #24292f 55%, #1a1f24);
+  color: #fff !important; border: 1px solid #3d444d;
+  box-shadow: 0 1px 3px rgba(15, 35, 55, 0.25);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+.gh-btn:hover {
+  text-decoration: none;
+  background: linear-gradient(135deg, #4e7196, var(--accent) 60%, #33566e);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(62, 101, 138, 0.35);
+}
+.gh-btn svg { flex-shrink: 0; }
+.paper-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 12.5px; font-weight: 600;
+  padding: 6px 14px; border-radius: 8px;
+  color: var(--sub); background: #fff;
+  border: 1.5px dashed #b6c2cd; cursor: default;
+}
+.paper-btn svg { color: #9aa5b0; flex-shrink: 0; }
 
 .tags { margin-top: 6px; }
 .tag {
