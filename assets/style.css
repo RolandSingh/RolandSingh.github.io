@@ -117,8 +117,9 @@ a:hover { text-decoration: underline; }
 
 /* publication action buttons */
 .pub-links {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
-  margin-top: 10px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
+  margin-top: 14px; padding-top: 12px;
+  border-top: 1px solid var(--border);
 }
 .gh-btn {
   display: inline-flex; align-items: center; gap: 7px;
